@@ -7,7 +7,7 @@ Your program should take a number from the user. This indicates how many markov 
 
 Your program should take another number from the user. This indicates the length of the key to be used.
 
-* Build a map as in map exercise 2
+* Build a map
 
 * Pick a key at random from the map
 
@@ -28,20 +28,9 @@ int main() {
    cout << "Please insert a file name , length of key to be used, and how many Markov words to generate."<< endl;
     std::cin >> file >> key >> wordsToGenerate;
     MarkovGenerator generator(file, key, wordsToGenerate);
-    //MarkovGenerator generator(INPUTFILE, 5,10);
-    //generator.printMap();
     generator.generate();
 
 
 
    return 0;
 }
-/* CONSOLE OUTPUT
- *
-/Users/alialkahli/CLionProjects/FullMarkovGenerator/cmake-build-debug/FullMarkovGenerator
-Please insert a file name , length of key to be used, and how many Markov words to generate.
-/Users/alialkahli/CLionProjects/FullMarkovGenerator/emma.txt 5 10
-change?--It was true that her friend was going only half
-
-Process finished with exit code 0
- */
